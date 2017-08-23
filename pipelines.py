@@ -10,7 +10,7 @@ class ShopPipeline(object):
       link = item['link']
       price = item['price'][0]
       comment = item['comment'][0]
-      sql = "insert into goods(title,link,price,comment)values('"+title+"','"+link+"','"+price+"','"+comment+"')"
+      sql = "insert into goods(title,link,price,comment) values('"+title+"','"+link+"','"+price+"','"+comment+"')"
       self.conn.query(sql)
       print(title)
       print(link)
