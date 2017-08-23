@@ -23,3 +23,4 @@ select * from goods;
 select * from goods limit 10;
 show columns from goods;#查看表goods中所有字段
 '''
+select count(*) from goods; #goods的条数
