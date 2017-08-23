@@ -7,7 +7,7 @@ d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com
 '''
 
 '''
-d:\scrapy\taobao>scrapy crawl tb --ignore
+d:\scrapy\taobao>scrapy crawl tb --nolog
 '''
 
 
