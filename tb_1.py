@@ -28,7 +28,7 @@ class TbSpider(scrapy.Spider):
             yield Request(url=url1, callback=self.next)
 
     def next(self, response):
-        item = ShopItem()
+        item = TaobaoItem()
         item['title'] = response.xpath('//meta[@name="keywords"]/@content')
         item['link'] = response.url
         pat_price = '"defaultItemPrice":"(.*?)"'
