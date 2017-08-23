@@ -1,0 +1,12 @@
+'''
+ROBOTSTXT_OBEY = True    
+'''
+#ROBOTSTXT_OBEY = False
+
+
+'''
+#ITEM_PIPELINES = {
+#    'taobao.pipelines.TaobaoPipeline': 300,
+#}
+'''
+#改成去除3个#号，改TaobaoPipeline
