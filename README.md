@@ -1,15 +1,17 @@
 # taobao
+#使用scrapy多线程异步框架爬取淘宝网商品的数据
+#自动翻页：分析搜索结果URL的规律，实现翻页
+#获取各商品的URL：使用正则获取各商品的URL并保存在数组中
+#获取各商品的“商品名”、“价格”、“链接”等数据
+#
+
 #coding:utf-8
 '''
 d:\scrapy>scrapy startproject taobao
 d:\scrapy>cd taobao
 d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com
-'''
-
-'''
 d:\scrapy\taobao>scrapy crawl tb --nolog
 '''
-
 
 
 
