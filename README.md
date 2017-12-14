@@ -17,6 +17,9 @@ d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com #以‘basic’为模�
 '''
 #用SCRAPY打开'd:\scrapy\taobao\taobao'
 #下载‘taobao-spider/spiders/tb.py’，并将其粘贴到SCRAPY的'tb'文件中
+
+'''
+在cmd中执行爬虫：
 d:\scrapy\taobao>scrapy crawl tb --nolog #执行爬虫文件（不加载中间执行过程）
 '''
 
