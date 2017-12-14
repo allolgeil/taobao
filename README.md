@@ -1,19 +1,24 @@
-# taobao
+# 实现方法
 #使用scrapy多线程异步框架爬取淘宝网商品的数据
 #自动翻页：分析搜索结果URL的规律，实现翻页
 #获取各商品的URL：使用正则获取各商品的URL并保存在数组中
 #获取各商品的“商品名”、“价格”、“链接”等数据
-#
 
-#coding:utf-8
+#安装scrapy
+
 '''
-d:\scrapy>scrapy startproject taobao
+在D盘新建文件夹'test'
+打开cmd，并执行：
+d:
+cd /test
+d:\scrapy>scrapy startproject taobao #创建名为‘taobao’在工程（项目）
 d:\scrapy>cd taobao
-d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com
-d:\scrapy\taobao>scrapy crawl tb --nolog
+d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com #以‘basic’为模版创建名为‘tb’爬虫文件
 '''
 
-
+#下载
+d:\scrapy\taobao>scrapy crawl tb --nolog #执行爬虫文件（不加载中间执行过程）
+'''
 
 '''
 show databases;
