@@ -15,8 +15,8 @@ d:\scrapy>scrapy startproject taobao #创建名为‘taobao’在工程（项目
 d:\scrapy>cd taobao
 d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com #以‘basic’为模版创建名为‘tb’爬虫文件
 '''
-
-#下载
+#用SCRAPY打开'd:\scrapy\taobao\taobao'
+#下载‘taobao-spider/spiders/tb.py’，并将其粘贴到SCRAPY的'tb'文件中
 d:\scrapy\taobao>scrapy crawl tb --nolog #执行爬虫文件（不加载中间执行过程）
 '''
 
