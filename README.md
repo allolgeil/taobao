@@ -19,8 +19,9 @@ d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com #以‘basic’为模�
 #下载‘taobao-spider/spiders/tb.py’，并将其粘贴到SCRAPY的'tb'文件中
 #在'setting.py'中将ROBOTSTXT_OBEY = True设置成ROBOTSTXT_OBEY = False
 #在'setting.py'中搜索pipelines，将'taobao.pipelines.SomePipeline': 300,设置成‘'taobao.pipelines.TaobaoPipeline': 300,’，并去除前面的#号
-
+#因为文档修改过，所以需要把items.py、piplines.py中的Shop改成Taobao，不然无法正常调用
 '''
+
 在cmd中执行爬虫：
 d:\scrapy\taobao>scrapy crawl tb --nolog #执行爬虫文件（不加载中间执行过程）
 '''
@@ -37,4 +38,5 @@ show columns from goods;#查看表goods中所有字段
 '''
 select count(*) from goods; #goods的条数
 
-#问题：不能获得所有页的商品ID，可能需要在哪里设置延迟
+#问题1：不能获得所有页的商品ID，可能需要在哪里设置延迟
+#问题2：数据无法保存到mysql中
