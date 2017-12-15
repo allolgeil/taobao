@@ -27,6 +27,7 @@ d:\scrapy\taobao>scrapy crawl tb --nolog #执行爬虫文件（不加载中间�
 '''
 
 '''
+MYSQL查询
 show databases;
 create database tb;
 use tb;
@@ -35,8 +36,8 @@ create table goods(id int(32) auto_increment primary key,title varchar(100),link
 select * from goods;
 select * from goods limit 10;
 show columns from goods;#查看表goods中所有字段
-'''
 select count(*) from goods; #goods的条数
+'''
 
 #问题1：不能获得所有页的商品ID，可能需要在哪里设置延迟
 #问题2：数据无法保存到mysql中
