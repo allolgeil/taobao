@@ -42,3 +42,4 @@ select count(*) from goods; #goods的条数
 
 #问题1：不能获得所有页的商品ID，可能需要在哪里设置延迟
 #问题2：数据无法保存到mysql中
+#运行到page函数就没有继续执行了，是不是scrapy中有限制
