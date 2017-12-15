@@ -36,6 +36,18 @@ class TbSpider(scrapy.Spider):
             url1 = "https://detail.tmall.com/item.htm?spm=a230r.1.14.9.76bf523ot7cX5&id="+str(thisid)
             yield Request(url=url1, callback=self.next)
 
+  '''
+  #执行到page函数就无法继续执行，将调整此测试函数并放在parse函数后面可以执行
+    def cesi(self, response):
+        print('运行到cesi')
+        cesi_url = response.url
+        print(cesi_url)
+        taobao1 = response.body.decode('utf-8', 'ignore')
+        fh = open('D:/可删/taobao2.html', 'w', encoding='utf-8')
+        fh.write(taobao1)
+        fh.close()
+        yield Request(url=cesi_url, callback=self.next)
+    '''    
     #爬取商品名、商品链接、商品价格、商品评价数，并通过实例化item将他们保存
     def next(self, response):
         # 实例化item保存爬取的数据
