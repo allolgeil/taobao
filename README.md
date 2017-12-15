@@ -36,3 +36,5 @@ select * from goods limit 10;
 show columns from goods;#查看表goods中所有字段
 '''
 select count(*) from goods; #goods的条数
+
+#问题：不能获得所有页的商品ID，可能需要在哪里设置延迟
