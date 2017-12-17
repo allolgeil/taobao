@@ -17,7 +17,7 @@ d:\scrapy>cd taobao
 d:\scrapy\taobao>scrapy genspider -t basic tb taobao.com #以‘basic’为模版创建名为‘tb’爬虫文件
 '''
 #用SCRAPY打开'd:\scrapy\taobao\taobao'
-#下载‘taobao-spider/spiders/tb.py’，并将其粘贴到SCRAPY的'tb'文件中
+#下载‘taobao-spider/spiders/tb2.py’，并将其粘贴到SCRAPY的'tb'文件中(tb.py中错误，不能直接运行)
 #在'setting.py'中将ROBOTSTXT_OBEY = True设置成ROBOTSTXT_OBEY = False
 #在'setting.py'中搜索pipelines，将'taobao.pipelines.SomePipeline': 300,设置成‘'taobao.pipelines.TaobaoPipeline': 300,’，并去除前面的#号
 #因为文档修改过，所以需要把items.py、piplines.py中的Shop改成Taobao，不然无法正常调用
